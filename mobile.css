@@ -1,0 +1,87 @@
+@media(max-width:450px){
+
+
+
+    header {
+    
+      
+        padding: 10px 20px;
+        position: relative;
+     
+    }
+
+   
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap:40px;
+        position: absolute;
+        background-color: white;
+        top:70px;
+        left:-300px;
+        width: 300px;
+        height: calc(100vh - 110px);
+        z-index: 100;
+        padding: 50px 40px;
+        transition: 1s;
+    }
+
+    header nav a {
+        display: flex;
+        gap:15px;
+        font-size: 16px;
+    }
+
+    header nav a img {
+        display: flex;
+        transition: 0.5s;
+    }
+
+    header nav a:hover{
+        border-bottom: 2px solid transparent;
+         color:black;
+    }
+    header nav a:hover img {
+      transform: scale(1.5);
+    }
+
+    .menu-btn {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        background:url("menu.png");
+        background-size: cover;
+        background-position: center center;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+
+  
+    main form {
+        width: 90%;
+      
+    }
+
+   
+/* utility / helper class */
+
+.show-nav{
+    left:0px;
+   
+}
+
+.close-bg{
+ background: url("close.png");
+ background-size: cover;
+background-position: center center;
+cursor: pointer;
+transform: rotate(360deg);
+}
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBank Loan App</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+
+    <header>
+          <span>
+                <img src="logo.png" alt="" width="25">
+                <b>iBank Ltd.</b>
+          </span>
+
+          <nav>
+                <a href=""> <img src="home.png" alt="" width="17"> Home </a>
+                <a href=""><img src="loan.png" alt="" width="17"> Request for Loan</a>
+                <a href=""> <img src="account.png" alt="" width="17"> Create Account</a>
+                <a href=""> <img src="login.png" alt="" width="17">Login</a>
+                <a href=""><img src="contact.png" alt="" width="17">Contact us</a>
+          </nav>
+
+          <button class="menu-btn"></button>
+    </header>
+    <main>
+            <form class="loan-form">
+                  <small>rate: <b>20%</b></small>
+                  <h3>Calculate your loan here...</h3>
+                  <input type="number" placeholder="loan amount" class="loan-amount" min="500000" step="100000" required>
+                   <div class="select-group">
+                            <label>Select payment duration</label>
+                            <select class="duration">
+                                <option value="0">--</option>
+                                <option value="3">3 months</option>
+                                <option value="6">6 months</option>
+                                <option value="12">12 months</option>
+                                <option value="18">18 months</option>
+                                <option value="24">24 months</option>
+                            </select>
+
+                   </div>
+
+                   <span class="button-box">
+                       <button>Calculate →</button>
+                       <button type="reset" class="clear-btn">Clear →</button>
+                   </span>
+
+                   <p class="result-box">
+                         <span>Interest: ₦ <b class="interest">0.0</b></span>
+                         <span>Total Payment: ₦<b class="amount">0.0</b></span>
+                          
+                   </p>
+            </form>
+    </main>
+    <footer>
+          <p>&copy; Copyright 2024. All rights reserved. Powered by Codeprof Academy.</p>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
